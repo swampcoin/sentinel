@@ -3,27 +3,27 @@
 """
 import sys
 import os
-from dash_config import DashConfig
+from veco_config import VecoConfig
 
 default_sentinel_config = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '../sentinel.conf')
 )
 sentinel_config_file = os.environ.get('SENTINEL_CONFIG', default_sentinel_config)
-sentinel_cfg = DashConfig.tokenize(sentinel_config_file)
+sentinel_cfg = VecoConfig.tokenize(sentinel_config_file)
 sentinel_version = "1.1.0"
-min_dashd_proto_version_with_sentinel_ping = 70207
+min_vecod_proto_version_with_sentinel_ping = 70207
 
 
-def get_dash_conf():
+def get_veco_conf():
     home = os.environ.get('HOME')
 
-    dash_conf = os.path.join(home, ".dashcore/dash.conf")
+    veco_conf = os.path.join(home, ".vecocore/veco.conf")
     if sys.platform == 'darwin':
-        dash_conf = os.path.join(home, "Library/Application Support/DashCore/dash.conf")
+        veco_conf = os.path.join(home, "Library/Application Support/VecoCore/veco.conf")
 
-    dash_conf = sentinel_cfg.get('dash_conf', dash_conf)
+    veco_conf = sentinel_cfg.get('veco_conf', veco_conf)
 
-    return dash_conf
+    return veco_conf
 
 
 def get_network():
@@ -79,6 +79,6 @@ def get_db_conn():
     return db
 
 
-dash_conf = get_dash_conf()
+veco_conf = get_veco_conf()
 network = get_network()
 db = get_db_conn()
