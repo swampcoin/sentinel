@@ -2,8 +2,6 @@
 
 An all-powerful toolset for Veco.
 
-[![Build Status](https://travis-ci.org/vecopay/sentinel.svg?branch=master)](https://travis-ci.org/vecopay/sentinel)
-
 Sentinel is an autonomous agent for persisting, processing and automating Veco V12.1 governance objects and tasks, and for expanded functions in the upcoming Veco V13 release (Evolution).
 
 Sentinel is implemented as a Python application that binds to a local version 12.1 vecod instance on each Veco V12.1 Masternode.
