@@ -1,10 +1,10 @@
-# Swamp Sentinel
+# Veco Sentinel
 
-An all-powerful toolset for Swamp.
+An all-powerful toolset for Veco.
 
-Sentinel is an autonomous agent for persisting, processing and automating Swamp V12.1 governance objects and tasks, and for expanded functions in the upcoming Swamp V13 release (Evolution).
+Sentinel is an autonomous agent for persisting, processing and automating Veco V12.1 governance objects and tasks, and for expanded functions in the upcoming Veco V13 release (Evolution).
 
-Sentinel is implemented as a Python application that binds to a local version 12.1 swampd instance on each Swamp V12.1 Masternode.
+Sentinel is implemented as a Python application that binds to a local version 12.1 swampd instance on each Veco V12.1 Masternode.
 
 This guide covers installing Sentinel onto an existing 12.1 Masternode in Ubuntu 14.04 / 16.04.
 
@@ -21,7 +21,7 @@ Update system packages and ensure virtualenv is installed:
     $ sudo apt-get update
     $ sudo apt-get -y install python-virtualenv
 
-Make sure the local Swamp daemon running is at least version 12.1 (120100)
+Make sure the local Veco daemon running is at least version 12.1 (120100)
 
     $ swamp-cli getinfo | grep version
 
@@ -29,7 +29,7 @@ Make sure the local Swamp daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/SwampOfficial/sentinel.git && cd sentinel
+    $ git clone https://github.com/VecoOfficial/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -65,7 +65,7 @@ To view debug output, set the `SENTINEL_DEBUG` environment variable to anything 
 
 ## Contributing
 
-Please follow the [SwampCore guidelines for contributing](https://github.com/swamppay/swamp/blob/v0.12.1.x/CONTRIBUTING.md).
+Please follow the [VecoCore guidelines for contributing](https://github.com/swamppay/swamp/blob/v0.12.1.x/CONTRIBUTING.md).
 
 Specifically:
 
@@ -83,4 +83,4 @@ Specifically:
 
 ### License
 
-Released under the MIT license, under the same terms as SwampCore itself. See [LICENSE](LICENSE) for more info.
+Released under the MIT license, under the same terms as VecoCore itself. See [LICENSE](LICENSE) for more info.

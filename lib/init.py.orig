@@ -65,7 +65,7 @@ def has_swamp_conf():
 
     # ensure swamp_conf exists & readable
     #
-    # if not, print a message stating that Swamp Core must be installed and
+    # if not, print a message stating that Veco Core must be installed and
     # configured, including JSONRPC access in swamp.conf
     try:
         f = io.open(config.swamp_conf)
@@ -96,7 +96,7 @@ def main():
         sys.exit(1)
 
     if not has_swamp_conf():
-        print("SwampCore must be installed and configured, including JSONRPC access in swamp.conf")
+        print("VecoCore must be installed and configured, including JSONRPC access in swamp.conf")
         sys.exit(1)
 
 

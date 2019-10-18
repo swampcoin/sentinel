@@ -9,10 +9,10 @@ import config
 from models import Superblock, Proposal, GovernanceObject, Setting, Signal, Vote, Outcome, Watchdog
 from models import VoteSignals, VoteOutcomes
 from peewee import PeeweeException  # , OperationalError, IntegrityError
-from swampd import SwampDaemon
+from swampd import VecoDaemon
 import swamplib
 from decimal import Decimal
-swampd = SwampDaemon.from_swamp_conf(config.swamp_conf)
+swampd = VecoDaemon.from_swamp_conf(config.swamp_conf)
 import misc
 # ==============================================================================
 # do stuff here

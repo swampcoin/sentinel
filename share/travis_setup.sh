@@ -1,9 +1,9 @@
 #!/bin/bash
 set -evx
 
-mkdir ~/.vecocore
+mkdir ~/.swampcore
 
 # safety check
-if [ ! -f ~/.vecocore/.veco.conf ]; then
-  cp share/veco.conf.example ~/.vecocore/veco.conf
+if [ ! -f ~/.swampcore/.swamp.conf ]; then
+  cp share/swamp.conf.example ~/.swampcore/swamp.conf
 fi

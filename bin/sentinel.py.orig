@@ -5,7 +5,7 @@ sys.path.append(os.path.normpath(os.path.join(os.path.dirname(__file__), '../lib
 import init
 import config
 import misc
-from swampd import SwampDaemon
+from swampd import VecoDaemon
 from models import Superblock, Proposal, GovernanceObject, Watchdog
 from models import VoteSignals, VoteOutcomes, Transient
 import socket
@@ -157,7 +157,7 @@ def is_swampd_port_open(swampd):
 
 
 def main():
-    swampd = SwampDaemon.from_swamp_conf(config.swamp_conf)
+    swampd = VecoDaemon.from_swamp_conf(config.swamp_conf)
     options = process_args()
 
     # check swampd connectivity

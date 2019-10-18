@@ -78,9 +78,9 @@ def proposal():
 
 
 def test_proposal_is_valid(proposal):
-    from swampd import SwampDaemon
+    from swampd import VecoDaemon
     import swamplib
-    swampd = SwampDaemon.from_swamp_conf(config.swamp_conf)
+    swampd = VecoDaemon.from_swamp_conf(config.swamp_conf)
 
     orig = Proposal(**proposal.get_dict())  # make a copy
 
@@ -149,7 +149,7 @@ def test_proposal_is_valid(proposal):
     proposal.payment_address = '221 B Baker St., London, United Kingdom'
     assert proposal.is_valid() is False
 
-    # this is actually the Swamp foundation multisig address...
+    # this is actually the Veco foundation multisig address...
     proposal.payment_address = '7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh'
     assert proposal.is_valid() is False
 
@@ -237,8 +237,8 @@ def test_proposal_is_deletable(proposal):
 
 # deterministic ordering
 def test_approved_and_ranked(go_list_proposals):
-    from swampd import SwampDaemon
-    swampd = SwampDaemon.from_swamp_conf(config.swamp_conf)
+    from swampd import VecoDaemon
+    swampd = VecoDaemon.from_swamp_conf(config.swamp_conf)
 
     for item in go_list_proposals:
         (go, subobj) = GovernanceObject.import_gobject_from_swampd(swampd, item)
