@@ -20,6 +20,7 @@ Update system packages and ensure virtualenv is installed:
 
     $ sudo apt-get update
     $ sudo apt-get -y install python-virtualenv
+    $ sudo apt install virtualenv
 
 Make sure the local Swamp daemon running is at least version 1.1 (1010000)
 
