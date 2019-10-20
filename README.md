@@ -2,11 +2,11 @@
 
 An all-powerful toolset for Swamp.
 
-Sentinel is an autonomous agent for persisting, processing and automating Swamp V1.1 governance objects and tasks, and for expanded functions in the upcoming Swamp V13 release (Evolution).
+Sentinel is an autonomous agent for persisting, processing and automating Swamp V1.1 governance objects and tasks.
 
 Sentinel is implemented as a Python application that binds to a local version 1.1 swampd instance on each Swamp V1.1 Masternode.
 
-This guide covers installing Sentinel onto an existing 1.1 Masternode in Ubuntu 14.04 / 16.04.
+This guide covers installing Sentinel onto an existing 1.1 Masternode in Ubuntu Linux.
 
 ## Installation
 
