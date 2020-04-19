@@ -8,4 +8,4 @@ d) On the opened window DELETE all text and paste the following text: sentinel-w
 
 e) Save changes and close file
 
-f) Double click “run_sentinel.bat” and wait 30 seconds or press “1” on keyboard.  If you see green messages with a data and the message "RUnning Sentinel" its working!
+f) Double click “run_sentinel.bat” and wait 30 seconds or press “1” on keyboard.  If you see green messages with a data and the message "Running Sentinel" its working!
