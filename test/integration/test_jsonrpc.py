@@ -21,7 +21,8 @@ def test_swampd():
         if line.startswith('testnet=1'):
             network = 'testnet'
             is_testnet = True
-            genesis_hash = u'00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c'
+            #genesis_hash = u'00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c'
+            genesis_hash = u'00000997e30aad936446ab7226cecd21875e867a57aca1a46d17be4316bab391'
 
     creds = SwampConfig.get_rpc_creds(config_text, network)
     swampd = SwampDaemon(**creds)
