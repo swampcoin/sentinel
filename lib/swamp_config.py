@@ -34,7 +34,7 @@ class SwampConfig():
         creds = {key: value for (key, value) in match}
 
         # standard Swamp defaults...
-        default_port = 33333 if (network == 'mainnet') else 33445
+                default_port = 26920 if (network == 'mainnet') else 16920
 
         # use default port for network if not specified in swamp.conf
         if not ('port' in creds):
